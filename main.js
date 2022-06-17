@@ -23,9 +23,6 @@ btnOperations.forEach(element => {
     })
 });
 
-// btnNumbers.forEach( element => {
-//     element.addEventListener('click', addNumbers(element) )});
-
 btnEquals.addEventListener('click', equalFunc)
 btnDot.addEventListener('click', addDot)
 
@@ -47,17 +44,7 @@ function addNumbers(element) {
         currentOperandTextElement.innerHTML = `${currentOperandTextElement.innerHTML.toString()}.${element.innerHTML}`
         return
     }
-    // if (!element.innerHTML === '0' &&
-    //     currentOperandTextElement.innerHTML[0] === '0') {
-    //     currentOperandTextElement.innerHTML = element.innerHTML
-    //     return
-    // }
-
-  // if (currentOperandTextElement.innerHTML[0] === '0'){
-  //     if (!currentOperandTextElement.innerHTML.includes('.')) {
-  //
-  //     }
-  // }
+   
     currentOperandTextElement.innerHTML = currentOperandTextElement.innerHTML.toString() + element.innerHTML
 }
 
